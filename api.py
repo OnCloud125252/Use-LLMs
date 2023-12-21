@@ -2,9 +2,8 @@ from flask import Flask, request, jsonify
 from main import PHI2
 
 
-model_path = "../phi-2"
 model_type = "CUDA_FP16"
-llm = PHI2(model_path, model_type, max_length=500, temperature=0.6)
+llm = PHI2(model_type, max_length=500, temperature=0.6)
 
 app = Flask("PHI2_API")
 

@@ -7,13 +7,12 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from _types import Models
 
 
+model_path = "../Model/phi-2"
 terminal_width = os.get_terminal_size().columns
 
 
 class PHI2:
-    def __init__(
-        self, model_path: str, model_type: Models, max_length=1000, temperature=0.8
-    ):
+    def __init__(self, model_type: Models, max_length=1000, temperature=0.8):
         self.model_path = model_path
         self.model_type = model_type
         self.max_length = max_length
