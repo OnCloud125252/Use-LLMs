@@ -7,7 +7,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from _types import Models
 
 
-model_path = "../Model/phi-2"
+model_path = "../../Model/phi-2"
 terminal_width = os.get_terminal_size().columns
 
 
